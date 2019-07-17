@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/moviefights/static/css/main.ba46162b.chunk.css",
-    "main.js": "/moviefights/static/js/main.ee973973.chunk.js",
-    "main.js.map": "/moviefights/static/js/main.ee973973.chunk.js.map",
+    "main.css": "/moviefights/static/css/main.a2933783.chunk.css",
+    "main.js": "/moviefights/static/js/main.684682d4.chunk.js",
+    "main.js.map": "/moviefights/static/js/main.684682d4.chunk.js.map",
     "runtime~main.js": "/moviefights/static/js/runtime~main.62900f1f.js",
     "runtime~main.js.map": "/moviefights/static/js/runtime~main.62900f1f.js.map",
-    "static/js/2.67eb9f0f.chunk.js": "/moviefights/static/js/2.67eb9f0f.chunk.js",
-    "static/js/2.67eb9f0f.chunk.js.map": "/moviefights/static/js/2.67eb9f0f.chunk.js.map",
+    "static/js/2.6c92cde4.chunk.js": "/moviefights/static/js/2.6c92cde4.chunk.js",
+    "static/js/2.6c92cde4.chunk.js.map": "/moviefights/static/js/2.6c92cde4.chunk.js.map",
     "index.html": "/moviefights/index.html",
-    "precache-manifest.016525ac0432bff534a5e80ec5bde031.js": "/moviefights/precache-manifest.016525ac0432bff534a5e80ec5bde031.js",
+    "precache-manifest.0fe25dcb7892c9b8fd0f74ab47efd27a.js": "/moviefights/precache-manifest.0fe25dcb7892c9b8fd0f74ab47efd27a.js",
     "service-worker.js": "/moviefights/service-worker.js",
-    "static/css/main.ba46162b.chunk.css.map": "/moviefights/static/css/main.ba46162b.chunk.css.map",
+    "static/css/main.a2933783.chunk.css.map": "/moviefights/static/css/main.a2933783.chunk.css.map",
     "static/media/fight-white.png": "/moviefights/static/media/fight-white.e8278b94.png"
   }
 }
