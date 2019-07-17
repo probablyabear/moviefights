@@ -114,11 +114,12 @@ const Fight = () => {
           {errors.contenderOneFormError && (
             <p className={classes.error}>Please enter a query</p>
           )}
-          {isLoading && <Spinner />}
+          {/* {isLoading && <Spinner />} */}
           {contenderOneSearchResults.length !== 0 ? (
             <MovieSearchResults results={contenderOneSearchResults} />
           ) : null}
         </Grid>
+
         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
           <MovieSearch
             name="contenderTwoQuery"
@@ -130,12 +131,13 @@ const Fight = () => {
           {errors.contenderTwoFormError && (
             <p className={classes.error}>Please enter a query</p>
           )}
-          {isLoading && <Spinner />}
+          {/* {isLoading && <Spinner />} */}
           {contenderTwoSearchResults.length !== 0 ? (
             <MovieSearchResults results={contenderTwoSearchResults} />
           ) : null}
         </Grid>
       </Grid>
+      {isLoading && <Spinner />}
     </Container>
   );
 };
