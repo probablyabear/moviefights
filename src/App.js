@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Navbar from "./layout/Navbar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { pink, blue } from "@material-ui/core/colors";
@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Github from "./pages/Github";
 import Home from "./pages/Home/Home";
 import Fight from "./pages/Fight";
+import NotFound from "./pages/NotFound";
 
 const theme = createMuiTheme({
   palette: {
@@ -25,7 +26,7 @@ function App() {
     <Fragment>
       <CssBaseline />
       <div className="App">
-        <Router>
+        <HashRouter basename="/">
           <ThemeProvider theme={theme}>
             <Navbar />
             <Switch>
@@ -33,9 +34,10 @@ function App() {
               <Route exact path="/fight" component={Fight} />
               <Route exact path="/about" component={About} />
               <Route exact path="/github" component={Github} />
+              <Route component={NotFound} />
             </Switch>
           </ThemeProvider>
-        </Router>
+        </HashRouter>
       </div>
     </Fragment>
   );
