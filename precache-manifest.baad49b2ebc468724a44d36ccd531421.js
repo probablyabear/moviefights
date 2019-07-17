@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "98c806f4754c394b6ce2deb049b74b1a",
+    "revision": "b22f2bbfdf9e2ba3dbe0544c6d0f1c3f",
     "url": "/moviefights/index.html"
   },
   {
-    "revision": "04bed6ecc70f49c5d326",
+    "revision": "8c3fc846f85fd2c056a8",
     "url": "/moviefights/static/css/main.ba46162b.chunk.css"
   },
   {
-    "revision": "6d16273fecedf4b9a17f",
-    "url": "/moviefights/static/js/2.d19da72d.chunk.js"
+    "revision": "385d936aed194f0ffd61",
+    "url": "/moviefights/static/js/2.67eb9f0f.chunk.js"
   },
   {
-    "revision": "04bed6ecc70f49c5d326",
-    "url": "/moviefights/static/js/main.dfdc2157.chunk.js"
+    "revision": "8c3fc846f85fd2c056a8",
+    "url": "/moviefights/static/js/main.ee973973.chunk.js"
   },
   {
     "revision": "8bbba65c2a182b998f45",
