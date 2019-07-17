@@ -1,0 +1,10 @@
+.home-wrapper {
+  position: relative;
+}
+
+.headline-image {
+  margin: 2rem 0;
+}
+.headline-image img {
+  width: 150px;
+}
