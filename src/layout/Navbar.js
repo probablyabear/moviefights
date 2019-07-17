@@ -48,7 +48,11 @@ const Navbar = () => {
           <Link component={RouterLink} to="/about" underline="none">
             <Button className={classes.button}>About</Button>
           </Link>
-          <Link component={RouterLink} to="/github" underline="none">
+          <Link
+            href="https://github.com/probablyabear/moviefights"
+            underline="none"
+            target="_blank"
+          >
             <Button className={classes.button}>Github</Button>
           </Link>
         </Toolbar>

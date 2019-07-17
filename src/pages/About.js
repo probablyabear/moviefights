@@ -39,8 +39,14 @@ const About = () => {
           <span style={{ fontStyle: "italic" }}>Thanks!</span>
         </Typography>
         <Typography component="p">
-          The project is available on GitHub if you'd like to mess around with
-          it.
+          The project is available on{" "}
+          <Link
+            target="_blank"
+            href="https://github.com/probablyabear/moviefights"
+          >
+            GitHub
+          </Link>{" "}
+          if you'd like to mess around with it.
         </Typography>
       </Paper>
     </Container>
