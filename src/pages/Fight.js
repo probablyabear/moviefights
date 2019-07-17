@@ -6,6 +6,7 @@ import axios from "axios";
 
 import MovieSearch from "../components/MovieSearch/MovieSearch";
 import MovieSearchResults from "../components/MovieSearchResults/MovieSearchResults";
+import Spinner from "../layout/Spinner/Spinner";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -41,6 +42,8 @@ const Fight = () => {
     contenderTwoFormError: ""
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const onChange = event => {
     setContenderQueries({
       ...contenderQueries,
@@ -67,6 +70,8 @@ const Fight = () => {
   const onSubmit = async (value, name, event) => {
     event.preventDefault();
 
+    setIsLoading(true);
+
     if (value.length < 2 && name === "contenderOneQuery") {
       const newErrors = { ...errors };
       newErrors.contenderOneFormError = "Please enter a query";
@@ -88,6 +93,7 @@ const Fight = () => {
       } else if (name === "contenderTwoQuery") {
         setContenderTwoSearchResults(response.data.results);
       }
+      setIsLoading(false);
     }
   };
 
@@ -108,6 +114,7 @@ const Fight = () => {
           {errors.contenderOneFormError && (
             <p className={classes.error}>Please enter a query</p>
           )}
+          {isLoading && <Spinner />}
           {contenderOneSearchResults.length !== 0 ? (
             <MovieSearchResults results={contenderOneSearchResults} />
           ) : null}
@@ -123,6 +130,7 @@ const Fight = () => {
           {errors.contenderTwoFormError && (
             <p className={classes.error}>Please enter a query</p>
           )}
+          {isLoading && <Spinner />}
           {contenderTwoSearchResults.length !== 0 ? (
             <MovieSearchResults results={contenderTwoSearchResults} />
           ) : null}
